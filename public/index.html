@@ -21,10 +21,8 @@
     Image Url: <input type="text" ng-model="songImage"></input></br>
     <button type="submit">Add Song</button>
   </form>
-  <div>
-    {{test}}
-  </div>
   <div ng-repeat="comment in comments | orderBy: ['genre','-upvotes']">
+    <img ng-src="{{comment.image}}" height="100px" width="100px">
     <span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(comment)"></span>
     {{comment.title}}, {{comment.album}}, {{comment.artist}}, {{comment.genre}} - upvotes: {{comment.upvotes}}
   </div>
