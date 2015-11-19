@@ -16,11 +16,11 @@
   </div>
   
     <form ng-submit="addComment()" style = "margin-top30px;">
-      Title: <input type="text" ng-model="songTitle"></input></br>
-      Album: <input type="text" ng-model="songAlbum"></input></br>
-      Artist: <input type="text" ng-model="songArtist"></input></br>
-      Genre: <input type="text" ng-model="songGenre"></input></br>
-      Image Url: <input type="text" ng-model="songImage"></input></br>
+      <div class="field">Title: <input type="text" ng-model="songTitle"></input></div>
+      <div class="field">Album: <input type="text" ng-model="songAlbum"></input></div>
+      <div class="field">Artist: <input type="text" ng-model="songArtist"></input></div>
+      <div class="field">Genre: <input type="text" ng-model="songGenre"></input></div>
+      <div class="field">Image Url: <input type="text" ng-model="songImage"></input></div>
       <button type="submit">Add Song</button>
     </form>
     <div ng-repeat="comment in comments | orderBy: ['genre','-upvotes']">
