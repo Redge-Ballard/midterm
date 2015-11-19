@@ -27,6 +27,9 @@ angular.module('comment', [])
         image : $scope.songImage,
         upvotes: 0,
       });
+      
+      $scope.background = $scope.songImage;
+      
       $scope.songTitle = '';
       $scope.songAlbum = '';
       $scope.songArtist = '';
