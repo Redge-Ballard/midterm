@@ -10,6 +10,10 @@ input {
   color: black;
 }
 
+button {
+  color: black;
+}
+
 #stuff {
   color: white;
   background-color: black;
