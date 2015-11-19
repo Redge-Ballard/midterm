@@ -1,19 +1,13 @@
 body {
+  background-image: url("http://vignette4.wikia.nocookie.net/bastille/images/e/e5/Bastille_all_this_bad_blood-portada.jpg/revision/latest?cb=20140216015228");
+  background-size:100%;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: rgb(225,200,150);
 }
 
 #stuff {
-  background-image: url("http://vignette4.wikia.nocookie.net/bastille/images/e/e5/Bastille_all_this_bad_blood-portada.jpg/revision/latest?cb=20140216015228");
-  background-size:100%;
-}
-#stuff::after {
-  content: "";
-  background: url("http://vignette4.wikia.nocookie.net/bastille/images/e/e5/Bastille_all_this_bad_blood-portada.jpg/revision/latest?cb=20140216015228");
-  opacity: 0.5;
-  background-size:100%;
-  z-index: -1;   
+  background-color: rgb(225,200,150);
+  opacity: 0.8;
 }
 
 a {
