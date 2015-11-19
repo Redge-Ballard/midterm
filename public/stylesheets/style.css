@@ -10,7 +10,16 @@ body {
   width:100%;
 }
 
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+}
 input {
+  display: inline-block;
+  float: left;
   color: black;
 }
 
