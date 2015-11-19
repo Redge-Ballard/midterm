@@ -1,12 +1,14 @@
 body {
   background-image: url("http://www.hdwallpaperscool.com/wp-content/uploads/2015/03/country-music-high-resolution-wallpaper-download-country-music-images-free.jpg");
   background-size:100%;
+  color: white;
   padding: 5px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 #stuff {
-  background-color: rgb(225,200,150);
+  color: white;
+  background-color: black;
   opacity: 0.95;
 }
 
