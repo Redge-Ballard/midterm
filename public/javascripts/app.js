@@ -16,7 +16,7 @@ angular.module('comment', [])
        });
     };
     if($scope.songTitle === '') { return; }
-      console.log("In addComment with "+$scope.formContent);
+      console.log("In addComment with "+$scope.songTitle);
       $scope.create({
         title: $scope.songTitle,
         album: $scope.songAlbum,
@@ -24,7 +24,10 @@ angular.module('comment', [])
         genre: $scope.songGenre,
         upvotes: 0,
       });
-      $scope.formContent = '';
+      $scope.songTitle = '';
+      $scope.songAlbum = '';
+      $scope.songArtist = '';
+      $scope.songGenre = '';
     $scope.upvote = function(comment) {
       return $http.put('/comments/' + comment._id + '/upvote')
         .success(function(data){
