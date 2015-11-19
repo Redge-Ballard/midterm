@@ -24,7 +24,7 @@
   <div ng-repeat="comment in comments | orderBy: ['genre','-upvotes']">
     <img ng-src="{{comment.image}}" height="100px" width="100px"/>
     <span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(comment)"></span>
-    {{comment.title}}, {{comment.album}}, {{comment.artist}}, {{comment.genre}} - upvotes: {{comment.upvotes}}
+    {{comment.title}}, {{comment.album}}, {{comment.artist}}, {{comment.genre}} - upvotes: {{comment.upvotes}} - {{comment.image}}
   </div>
 </div>
 </div>
