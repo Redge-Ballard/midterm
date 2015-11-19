@@ -14,7 +14,7 @@
   <div class="page-header"> 
     <h1>People's Choice - Best Song Ever</h1>
   </div>
-  
+  <div class="inputs">
     <form ng-submit="addComment()" style = "margin-top30px;">
       <div class="field">Title: <input type="text" ng-model="songTitle"></input></div>
       <div class="field">Album: <input type="text" ng-model="songAlbum"></input></div>
@@ -23,6 +23,7 @@
       <div class="field">Image Url: <input type="text" ng-model="songImage"></input></div>
       <button type="submit">Add Song</button>
     </form>
+    </div>
     <div ng-repeat="comment in comments | orderBy: ['genre','-upvotes']">
       <img ng-src="{{comment.image}}" height="100px" width="100px"/>
       <span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(comment)"></span>
