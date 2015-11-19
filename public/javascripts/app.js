@@ -31,7 +31,7 @@ angular.module('comment', [])
       $scope.songAlbum = '';
       $scope.songArtist = '';
       $scope.songGenre = '';
-      $scope.imageUrl = '';
+      $scope.songImage = '';
     };
     
     $scope.upvote = function(comment) {
