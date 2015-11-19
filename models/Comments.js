@@ -1,6 +1,9 @@
 var mongoose = require('mongoose');
 var CommentSchema = new mongoose.Schema({
   title: String,
+  album: String,
+  artist: String,
+  genre: String,
   upvotes: {type: Number, default: 0},
 });
 
