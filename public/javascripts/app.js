@@ -15,10 +15,13 @@ angular.module('comment', [])
           $scope.comments.push(data);
        });
     };
-    if($scope.formContent === '') { return; }
+    if($scope.songTitle === '') { return; }
       console.log("In addComment with "+$scope.formContent);
       $scope.create({
-        title: $scope.formContent,
+        title: $scope.songTitle,
+        album: $scope.songAlbum,
+        artist: $scope.songArtist,
+        genre: $scope.songGenre,
         upvotes: 0,
       });
       $scope.formContent = '';
