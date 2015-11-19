@@ -21,7 +21,7 @@
       <div class="field"><label>Artist:</label> <input type="text" ng-model="songArtist"></input></div>
       <div class="field"><label>Genre:</label> <input type="text" ng-model="songGenre"></input></div>
       <div class="field"><label>Image Url:</label> <input type="text" ng-model="songImage"></input></div>
-      <button type="submit">Add Song</button>
+      <button type="submit" class="field">Add Song</button>
     </form>
     </div>
     <div ng-repeat="comment in comments | orderBy: ['genre','-upvotes']">
