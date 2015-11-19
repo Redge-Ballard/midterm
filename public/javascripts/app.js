@@ -12,7 +12,7 @@ angular.module('comment', [])
     ];
     $scope.create = function(comment) {
        return $http.post('/comments', comment).success(function(data){
-          //$scope.comments.push(data);
+          $scope.comments.push(data);
        });
     };
     
