@@ -16,6 +16,8 @@ angular.module('comment', [])
        });
     };
     if($scope.songTitle === '') { return; }
+      var x = db.getCollectionNames();
+      console.log(x);
       console.log("In addComment with "+$scope.songTitle);
       $scope.create({
         title: $scope.songTitle,
