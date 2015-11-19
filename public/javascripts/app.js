@@ -24,6 +24,7 @@ angular.module('comment', [])
         album: $scope.songAlbum,
         artist: $scope.songArtist,
         genre: $scope.songGenre,
+        image : $scope.songImage,
         upvotes: 0,
       });
       $scope.songTitle = '';
