@@ -27,9 +27,6 @@ input {
 .field {
   margin: 2px;
 }
-.field,input {
-  float: right;
-}
 
 button {
   color: black;
