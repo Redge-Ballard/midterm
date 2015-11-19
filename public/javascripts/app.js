@@ -12,12 +12,10 @@ angular.module('comment', [])
     ];
     $scope.create = function(comment) {
        return $http.post('/comments', comment).success(function(data){
-          $scope.comments.push(data);
+          //$scope.comments.push(data);
        });
     };
     if($scope.songTitle === '') { return; }
-      var x = db.getCollectionNames();
-      console.log(x);
       console.log("In addComment with "+$scope.songTitle);
       $scope.create({
         title: $scope.songTitle,
