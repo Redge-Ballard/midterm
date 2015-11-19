@@ -4,6 +4,7 @@ var CommentSchema = new mongoose.Schema({
   album: String,
   artist: String,
   genre: String,
+  image: String,
   upvotes: {type: Number, default: 0},
 });
 
