@@ -9,23 +9,25 @@
 <body ng-app="comment" ng-controller="MainCtrl">
 <div class="row">
 <div class="col-md-6 col-md-offset-3">
-<div class="page-header"> 
-  <h1>People's Choice - Best Song Ever</h1>
-</div>
-
-  <form ng-submit="addComment()" style = "margin-top30px;">
-    Title: <input type="text" ng-model="songTitle"></input></br>
-    Album: <input type="text" ng-model="songAlbum"></input></br>
-    Artist: <input type="text" ng-model="songArtist"></input></br>
-    Genre: <input type="text" ng-model="songGenre"></input></br>
-    Image Url: <input type="text" ng-model="songImage"></input></br>
-    <button type="submit">Add Song</button>
-  </form>
-  <div ng-repeat="comment in comments | orderBy: ['genre','-upvotes']">
-    <img ng-src="{{comment.image}}" height="100px" width="100px"/>
-    <span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(comment)"></span>
-    {{comment.title}}, {{comment.album}}, {{comment.artist}}, {{comment.genre}} - upvotes: {{comment.upvotes}}
+<div id="stuff">
+  <div class="page-header"> 
+    <h1>People's Choice - Best Song Ever</h1>
   </div>
+  
+    <form ng-submit="addComment()" style = "margin-top30px;">
+      Title: <input type="text" ng-model="songTitle"></input></br>
+      Album: <input type="text" ng-model="songAlbum"></input></br>
+      Artist: <input type="text" ng-model="songArtist"></input></br>
+      Genre: <input type="text" ng-model="songGenre"></input></br>
+      Image Url: <input type="text" ng-model="songImage"></input></br>
+      <button type="submit">Add Song</button>
+    </form>
+    <div ng-repeat="comment in comments | orderBy: ['genre','-upvotes']">
+      <img ng-src="{{comment.image}}" height="100px" width="100px"/>
+      <span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(comment)"></span>
+      {{comment.title}}, {{comment.album}}, {{comment.artist}}, {{comment.genre}} - upvotes: {{comment.upvotes}}
+    </div>
+</div>
 </div>
 </div>
 </body>
